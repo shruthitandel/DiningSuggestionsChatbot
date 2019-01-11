@@ -42,12 +42,12 @@ def lambda_handler(event, context):
     
     #sqs = boto3.client('sqs')
     sqs = boto3.client('sqs', region_name="us-east-1",
-            aws_access_key_id='AKIAJHG5MZOWVWJRJSJQ',
-            aws_secret_access_key='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'
+            aws_access_key_id='',
+            aws_secret_access_key=''
         )
     sns = boto3.client('sns',
-         aws_access_key_id="AKIAITNFSO4ZYRW6SETA",
-         aws_secret_access_key="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",
+         aws_access_key_id="",
+         aws_secret_access_key="",
          region_name="us-east-1"
     )
     response1 = sqs.receive_message(
