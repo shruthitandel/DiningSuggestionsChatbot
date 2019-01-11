@@ -86,7 +86,7 @@ def lambda_handler(event, context):
 	        rest_msg = rest_msg + str(cnt) + ". " + x['name'] + " at "+ x['location']['address1']+". " + "\n"
         sms_msg = sms_msg + rest_msg +"Enjoy your meal!"
 	    
-	    # Send your sms message.
+	# Send your sms message.
         sns.publish(
             PhoneNumber="+1"+phone_number,
             Message=sms_msg
