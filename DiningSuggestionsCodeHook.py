@@ -24,7 +24,7 @@ sqs = boto3.client('sqs', region_name="us-east-1",
 
 queue_url = 'https://sqs.us-east-1.amazonaws.com/402812318651/diningqueue'
 
-""" --- Helpers to build responses which match the structure of the necessary dialog actions --- """
+""" ---Helpers to build responses which match the structure of the necessary dialog actions --- """
 
 def get_slots(intent_request):
     return intent_request['currentIntent']['slots']
