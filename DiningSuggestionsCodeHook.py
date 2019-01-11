@@ -18,8 +18,8 @@ logger.setLevel(logging.DEBUG)
 
 # Create SQS client
 sqs = boto3.client('sqs', region_name="us-east-1",
-            aws_access_key_id='AKIAJHG5MZOWVWJRJSJQ',
-            aws_secret_access_key='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'
+            aws_access_key_id='',
+            aws_secret_access_key=''
         )
 
 queue_url = 'https://sqs.us-east-1.amazonaws.com/402812318651/diningqueue'
